@@ -6,11 +6,6 @@ export default function Layout({ title, menuItems, children }) {
       <div className='col-span-1 order-last md:order-first'>
         <h2 className='font-bold mb-4'>Menu</h2>
         <ul>
-          <li className='list-none mb-4'>
-            <Link href='/[[...slug]]' as='/'>
-              <a>Home</a>
-            </Link>
-          </li>
           {menuItems.map(({ slug, title }) => (
             <li className='list-none mb-4' key={slug}>
               <Link href='/[[...slug]]' as={`/${slug}`}>
