@@ -17,7 +17,7 @@ export default function Layout({ title, menuItems, children }) {
       </div>
       <div className='col-span-2'>
         <h1 className='text-4xl font-bold leading-tight mb-4'>{title}</h1>
-        {children}
+        <p>{children}</p>
       </div>
     </div>
   )
