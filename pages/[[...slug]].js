@@ -17,7 +17,7 @@ export default function Page({ allPages, page }) {
   }
   return (
     <Layout title={page.title} menuItems={allPages}>
-      {page.body}
+      <p>{page.body}</p>
     </Layout>
   )
 }
