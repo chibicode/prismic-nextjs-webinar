@@ -6,7 +6,7 @@ export default function Page() {
       title='Test Page'
       menuItems={[
         {
-          slug: '',
+          slug: 'home',
           title: 'Test Page'
         }
       ]}
