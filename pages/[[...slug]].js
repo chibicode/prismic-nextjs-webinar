@@ -8,7 +8,7 @@ export default function Page({ allPages, page }) {
   if (router.isFallback) {
     return (
       <Layout title='Loading' menuItems={[]}>
-        Please wait…
+        <p>Please wait…</p>
       </Layout>
     )
   }
