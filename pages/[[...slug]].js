@@ -23,6 +23,7 @@ export async function getStaticProps({ params }) {
     props: {
       allPages,
       page
-    }
+    },
+    unstable_revalidate: 5
   }
 }
