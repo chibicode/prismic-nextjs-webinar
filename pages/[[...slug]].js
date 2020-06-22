@@ -30,8 +30,8 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }) {
-  const { allPages, page } = await getData(params.slug[0])
+export async function getStaticProps({ params, previewData }) {
+  const { allPages, page } = await getData(params.slug[0], previewData)
   return {
     props: {
       allPages,
