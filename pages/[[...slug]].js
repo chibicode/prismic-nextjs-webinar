@@ -8,7 +8,7 @@ export default function Page({ allPages, page, preview }) {
   if (router.isFallback) {
     return (
       <Layout title='Loading' menuItems={[]}>
-        Please wait…
+        <p>Please wait…</p>
       </Layout>
     )
   }
@@ -17,7 +17,7 @@ export default function Page({ allPages, page, preview }) {
   }
   return (
     <Layout title={page.title} menuItems={allPages}>
-      {page.body}
+      <p>{page.body}</p>
       {preview && (
         <p className='mt-4'>
           (
