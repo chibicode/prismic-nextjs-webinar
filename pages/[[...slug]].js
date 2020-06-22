@@ -3,7 +3,7 @@ import { getSlugs, getData } from '../lib/api'
 import { useRouter } from 'next/router'
 import Error from 'next/error'
 
-export default function Page({ allPages, page }) {
+export default function Page({ allPages, page, preview }) {
   const router = useRouter()
   if (router.isFallback) {
     return (
@@ -18,6 +18,15 @@ export default function Page({ allPages, page }) {
   return (
     <Layout title={page.title} menuItems={allPages}>
       {page.body}
+      {preview && (
+        <p className='mt-4'>
+          (
+          <a href='/api/exit-preview' className='underline'>
+            Exit Preview Mode
+          </a>
+          )
+        </p>
+      )}
     </Layout>
   )
 }
@@ -30,12 +39,13 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params, previewData }) {
+export async function getStaticProps({ params, preview = false, previewData }) {
   const { allPages, page } = await getData(params.slug[0], previewData)
   return {
     props: {
       allPages,
-      page
+      page,
+      preview
     },
     unstable_revalidate: 5
   }
