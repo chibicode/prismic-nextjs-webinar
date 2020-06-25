@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "next": "9.4.4",
+    "prismic-javascript": "^3.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "tailwindcss": "^1.4.6"

@@ -2083,6 +2083,13 @@ cross-fetch@3.0.4:
     node-fetch "2.6.0"
     whatwg-fetch "3.0.0"
 
+cross-fetch@^3.0.4:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.5.tgz#2739d2981892e7ab488a7ad03b92df2816e03f4c"
+  integrity sha512-FFLcLtraisj5eteosnX1gf01qYDCOc4fDy0+euOt8Kn9YBY2NtXL/pCoYPavw24NIQkQqm5ZOLsGD5Zzj0gyew==
+  dependencies:
+    node-fetch "2.6.0"
+
 crypto-browserify@^3.11.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/crypto-browserify/-/crypto-browserify-3.12.0.tgz#396cf9f3137f03e4b8e532c58f698254e00f80ec"
@@ -4889,6 +4896,13 @@ pretty-hrtime@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
+
+prismic-javascript@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/prismic-javascript/-/prismic-javascript-3.0.0.tgz#83a860ebbee8002b72bdf16518d5aa8dcbbf7ebd"
+  integrity sha512-6IKPi9PtqsHyJQQRTkrdySt5W4QP8vu+3cJ4p9KmNzfDAv/hRgWr9ff/tnlTaggo/McsswQaH3xncLq3BHh7wA==
+  dependencies:
+    cross-fetch "^3.0.4"
 
 private@^0.1.8:
   version "0.1.8"
